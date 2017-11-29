@@ -1,0 +1,76 @@
+[
+    {
+        "id": "9419689f.5cf348",
+        "label": "new package",
+        "type": "tab"
+    },
+    {
+        "id": "6e317c04.d62294",
+        "type": "sensingkit",
+        "z": "9419689f.5cf348",
+        "name": "",
+        "subtype": "accelerometer",
+        "x": 189.5,
+        "y": 349,
+        "wires": [
+            [
+                "7eca97dd.6ea3e8"
+            ]
+        ]
+    },
+    {
+        "id": "7eca97dd.6ea3e8",
+        "type": "chartify",
+        "z": "9419689f.5cf348",
+        "name": "",
+        "title": "",
+        "chart": "gauge",
+        "xlabel": "",
+        "ylabel": "",
+        "min": "",
+        "max": "",
+        "labels": "",
+        "maxreadings": "",
+        "ticks": "",
+        "xtype": [
+            {
+                "source": "sensingkit",
+                "name": "x",
+                "type": "number"
+            },
+            {
+                "source": "sensingkit",
+                "name": "y",
+                "type": "number"
+            },
+            {
+                "source": "sensingkit",
+                "name": "z",
+                "type": "number"
+            }
+        ],
+        "ytype": [],
+        "subtype": "bar",
+        "previousinputs": {
+            "6e317c04.d62294": "accelerometer"
+        },
+        "x": 331.5,
+        "y": 351,
+        "wires": [
+            [
+                "3c8223ae.2536cc"
+            ]
+        ]
+    },
+    {
+        "id": "3c8223ae.2536cc",
+        "type": "app",
+        "z": "9419689f.5cf348",
+        "name": "",
+        "appId": "webapp",
+        "layout": null,
+        "x": 463.5,
+        "y": 348,
+        "wires": []
+    }
+]
