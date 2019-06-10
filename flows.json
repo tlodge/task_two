@@ -8,8 +8,12 @@
         "id": "6e317c04.d62294",
         "type": "sensingkit",
         "z": "9419689f.5cf348",
+        "ptype": {
+            "6e317c04.d62294": []
+        },
         "name": "",
         "subtype": "accelerometer",
+        "granularity": 10,
         "x": 189.5,
         "y": 349,
         "wires": [
@@ -22,6 +26,9 @@
         "id": "7eca97dd.6ea3e8",
         "type": "chartify",
         "z": "9419689f.5cf348",
+        "ptype": {
+            "": []
+        },
         "name": "",
         "title": "",
         "chart": "gauge",
