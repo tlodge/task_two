@@ -1,27 +1,29 @@
 {
     "manifest-version": 1,
-    "name": "tlodge-",
-    "version": "0.1.0",
-    "description": "",
+    "name": "tlodge-testpub",
+    "version": "0.3.0",
+    "description": "publishing test",
     "author": "tlodge",
     "licence": "MIT",
     "databox-type": "app",
-    "tags": "",
-    "homepage": "https://github.com/tlodge/tlodge-",
+    "tags": [
+        "test"
+    ],
+    "homepage": "https://github.com/tlodge/task_two",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tlodge/tlodge-.git"
+        "url": "git+https://github.com/tlodge/task_two.git"
     },
     "packages": [
         {
             "id": "9419689f.5cf348",
             "name": "new package",
-            "purpose": "",
+            "purpose": "test",
             "required": false,
             "datastores": [
                 "6e317c04.d62294"
             ],
-            "benefits": ""
+            "benefits": "test"
         }
     ],
     "allowed-combinations": [],
@@ -32,10 +34,20 @@
             "name": "sensingkit",
             "clientid": "6e317c04.d62294",
             "granularities": []
+        },
+        {
+            "type": "personalLoggerActuator",
+            "required": false,
+            "name": "personalLoggerActuator",
+            "clientid": "personalLoggerActuator",
+            "granularites": []
         }
     ],
     "network-permissions": [],
     "resource-requirements": {},
     "volumes": [],
-    "export-whitelist": []
+    "export-whitelist": [],
+    "docker-image": "tlodge-testpub",
+    "docker-registry": "registry.iotdatabox.com",
+    "docker-image-tag": "latest"
 }
